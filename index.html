@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		
+    <meta charset="UTF-8">
+    <title>Explorable Explanation SIR Model</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+		
+  	<script src="sketch.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0; background-color: rgb(160,160,160);} canvas {vertical-align: top;} </style>
+
+  </head>
+  <body>
+  	
+		<font face="Trebuchet MS" color="black">
+		<div style="text-align:center">
+		<font size="12">
+  		<b>
+  			SIR Modeling 
+  		</b>
+		</font>
+  	<font size="4"> 
+			<p>
+				SIR stands for Susceptible, Infected, and Recovered. 
+				These models are commonly used in disease control to estimate the rate of disease spread in a closed community.
+				The graph allows researchers to estimate how many people have either not contracted the disease, currently are infectious, and are no longer infected.
+			</p>
+			<p>
+				This graph was created using recursion functions.
+				In each day, some people in the susceptible category are added into the infected category.
+				The amount of people who become infected is dependent on the population of infected, susceptible, and infectiousness.
+				The higher those three values are, the more contagious the disease will be, and the larger the amount of people who become infected.
+			</p>
+			<p>
+				Also in each day, a certain fraction of the infected population recover from the disease.
+				Those who are moved into the recovered category can no longer be infected, and are in a separate group from the susceptible.
+			</p>
+			<p>
+				Each day, some amount of susceptible people are infected, and some infected become recovered.
+				The rate of transfer between these categories depends on the changing populations of the categories.
+				This cycle repeats until there are no more infected people to infected others. 
+			</p>
+			<p>
+				Use the sliders below to change how infectious a disease is and how quickly a person recovers.
+				The numbers in the boxes tell how many people are in the community and how many are initially infected, which can be changed.
+				The slider on the right tells what percent of the population belongs to each of the three categories on a certain day within the first year.
+				Note the patterns formed by the graphs as you move the sliders for infectivity and recovery.			
+			</p>
+			</font>
+			</div>
+			</font>
+	</body>
+
+</html>
